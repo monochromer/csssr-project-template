@@ -1,0 +1,5 @@
+mixin fieldset(attrs)
+	+b('fieldset').fieldset&attributes(attributes)
+		if (attrs && attrs.legend)
+			+e('legend').legend #{attrs.legend}
+		block

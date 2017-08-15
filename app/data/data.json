@@ -1,0 +1,89 @@
+{
+	"person": [
+		{
+			"label": "Полное ФИО",
+			"value": "John Doe"
+		},
+		{
+			"label": "Год рождения",
+			"value": "1961"
+		},
+		{
+			"label": "Место жительства",
+			"value": "New Nowhere City"
+		},
+		{
+			"label": "Скайп",
+			"value": "mr.doe.john"
+		},
+		{
+			"label": "Почта",
+			"value": "mr.doe.john@company.com"
+		}
+	],
+
+	"skills": [
+		{ "text": "БЭМ/OOCSS", "active": true },
+		{ "text": "Pug (Jade)", "active": true },
+		{ "text": "Stylus/LESS/SASS", "active": true },
+		{ "text": "Работаю с SVG", "active": false },
+		{ "text": "Верстаю семантично", "active": true },
+		{ "text": "Accessibility (A11Y)", "active": false },
+		{ "text": "ES2015/ES2016", "active": false },
+		{ "text": "Gulp/GRUNT", "active": true },
+		{ "text": "Webpack", "active": false },
+		{ "text": "Дружу с WebGL", "active": false },
+		{ "text": "jQuery", "active": true },
+		{ "text": "Знаю/изучаю Angular", "active": false },
+		{ "text": "Знаю/изучаю React", "active": false },
+		{ "text": "Знаю/изучаю Node.js", "active": false },
+		{ "text": "Использую Git", "active": true },
+		{ "text": "С глазомером всё ок", "active": false },
+		{ "text": "Читаю <a class='control__link text-link' href='http://blog.csssr.ru' target='_blank'>blog.csssr.ru</a>", "active": false },
+		{ "text": "Я ленивый(-ая)", "active": false },
+		{ "text": "У меня хороший английский", "active": false }
+	],
+
+	"jsLevel": [
+		{
+			"text": "Не владею",
+			"active": false
+		},
+		{
+			"text": "Использую готовые решения",
+			"active": true
+		},
+		{
+			"text": "Использую готовые решения и умею их переделывать",
+			"active": false
+		},
+		{
+			"text": "Пишу сложный JS с нуля",
+			"active": false
+		}
+	],
+
+	"esse": "Lorem Ipsum",
+
+	"plans": [
+		{
+			"text": "Верстать",
+			"active": true
+		},
+		{
+			"text": "Прокачиваться в JS",
+			"active": false
+		},
+		{
+			"text": "Менеджерство",
+			"active": false
+		},
+		{
+			"text": "Другое",
+			"active": false
+		}
+	],
+
+	"datestamp": "3.08.2017"
+}
+

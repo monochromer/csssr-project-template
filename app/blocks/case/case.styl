@@ -1,0 +1,15 @@
+.case
+	padding-bottom 74px
+	overflow hidden
+	min-height 100vh
+	font-family 'PT Sans', sans-serif
+	background embedurl('pattern.jpg') #eacd9b
+	background-size 347px 201px
+
+	+retina()
+		background-image embedurl('pattern@2x.jpg')
+
+	&__content
+		margin-x(auto)
+		padding-x(1em)
+		max-width calc(771px + 2em)

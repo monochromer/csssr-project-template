@@ -1,0 +1,21 @@
+.case-header
+	margin-bottom 38px
+	padding-top 48px
+	clearfix()
+
+	&__logo
+		margin-top 16px
+		float left
+
+	&__stamp
+		margin-right -63px
+		float right
+
+		@media (max-width: 900px)
+			margin-right 0
+
+	&__title
+		margin-left calc(100% / 3)
+		clear both
+		text-align center
+		image-replace(221px, 118px, 'case-title.png', 'case-title@2x.png')

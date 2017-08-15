@@ -1,0 +1,25 @@
+.text-input
+	padding-x(16px)
+	padding-top 14px
+	padding-bottom 10px
+	display inline-block
+	font 30px/1 'Courier New', monospace
+	color #231f20
+	background-color transparent
+	background-image embedurl('input-bg.png')
+	background-repeat repeat-x
+	background-position 0 100%
+	background-size 627px 5px
+	border none
+
+	+retina()
+		background-image embedurl('input-bg@2x.png')
+
+	&:focus
+		background-image embedurl('input-bg-focus.png')
+
+		+retina()
+			background-image embedurl('input-bg-focus@2x.png')
+
+	&_full
+		width 100%

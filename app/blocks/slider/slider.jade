@@ -1,0 +1,12 @@
+mixin slider(attrs)
+	+b.slider&attributes(attributes)
+		each item, index in attrs.data
+			+e('input').input(
+				type='radio',
+				checked=(item.active) ? true : false,
+				name='javascript-skill',
+				id='level-'+index
+			)
+
+		each item, index in attrs.data
+			+e('label').item(for='level-' + index) #{item.text}

@@ -1,0 +1,19 @@
+//- чекбоксы и радиобатоны
+
+mixin control(attrs)
+	- var cls = attrs.class
+	+b('label').control(class=(cls ? cls : '') + ' ' + 'control_type_' + attrs.type)&attributes(attributes)
+		+e('input').input(
+			type=attrs.type,
+			name=attrs.name,
+			value=attrs.value
+			disabled=attrs.disabled
+			checked=(attrs.checked === true) ? true : false,
+			readonly=(attrs.readonly === true) ? true : false
+		)
+		+e('span').icon
+		+e('span').content
+			if block
+				block
+			else
+				| #{attrs.label}

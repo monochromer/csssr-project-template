@@ -1,0 +1,94 @@
+.slider
+	position relative
+	margin-top 29px
+	display table
+	width 100%
+	border-spacing 0
+	border-collapse separate
+	background-image embedurl('slider-line.png')
+	background-repeat repeat-x
+	background-position 0 0
+	background-size 627px 5px
+
+	+retina()
+		background-image embedurl('slider-line@2x.png')
+
+	&__input
+		position absolute
+		z-index -1
+		top 0
+		left 0
+		opacity 0
+
+	&__item
+		position relative
+		padding-top 27px
+		display table-cell
+		font-size 13px
+		font-weight bold
+		line-height 19px
+		vertical-align top
+		cursor pointer
+		user-select none
+		color #2f1b15
+
+		&:hover
+			color #1f5f97
+
+		&::after
+			position absolute
+			left 0
+			bottom 100%
+			margin-bottom 3px
+			margin-left -7px
+			width 17px
+			height 14px
+			content ''
+			background embedurl('arrow.png') no-repeat
+			background-size 17px 14px
+			opacity 0
+			transition .2s
+
+			+retina()
+				background-image embedurl('arrow@2x.png')
+
+		&::before
+			position absolute
+			top 2px
+			left 0
+			width 3px
+			height 12px
+			content ''
+			background #41261f
+
+		&:nth-of-type(1)
+			width 145px
+
+		&:nth-of-type(2)
+			width 226px
+
+		&:nth-of-type(3)
+			width 170px
+
+		&:nth-of-type(4)
+			width 230px
+			text-align right
+
+			&::before
+			&::after
+				right 0
+				left auto
+
+			&::after
+				margin-right -7px
+				margin-left 0
+
+		&:nth-of-type(1)
+		&:nth-of-type(4)
+			&::before
+				height 22px
+
+	for index in (1..4)
+		&__input:nth-of-type({index}):checked ~ &__item:nth-of-type({index})::after
+			opacity 1
+

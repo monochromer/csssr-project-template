@@ -1,0 +1,14 @@
+include /blocks/logo/logo
+include /blocks/stamp/stamp
+
+mixin caseHeader()
+	+b('header').case-header&attributes(attributes)
+		+e.logo
+			+logo()
+				| CSSSR
+
+		+e.stamp
+			+stamp()
+				| Секретно. Заполнено собственноручно
+
+		+e({ tag: 'h1' }).title Дело

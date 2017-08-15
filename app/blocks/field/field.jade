@@ -1,0 +1,11 @@
+mixin field(attrs)
+	+b('label').field&attributes(attributes)
+		if (attrs.label)
+			+e.label #{attrs.label}
+		+e.control
+			+b('input').text-input._full(
+				type=attrs.type,
+				name=attrs.name,
+				readonly=(attrs.readonly === true) ? true : false,
+				value=attrs.value
+			)

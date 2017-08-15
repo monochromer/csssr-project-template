@@ -1,0 +1,7 @@
+include /blocks/case-header/case-header
+
+mixin case()
+	+b('article').case&attributes(attributes)
+		+e.content
+			+caseHeader()
+			block
